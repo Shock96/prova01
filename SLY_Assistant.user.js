@@ -19,17 +19,16 @@
 	'use strict';
 
 	//Used for reading solana data
-	let customReadRPCs = [];
+	let customReadRPCs = ['https://solana-mainnet.g.alchemy.com/v2/G7k39DPfRScy8vjCFb1u8ZW20x3m0vKS',
+	    'https://rpc.hellomoon.io/e786f9ab-21ce-4b16-abb8-8493e239ed5e'];
 
 	//Used for pushing transactions to solana chain
 	let customWriteRPCs = [];
 
     let saRPCs = [
-	    'https://solana-mainnet.g.alchemy.com/v2/G7k39DPfRScy8vjCFb1u8ZW20x3m0vKS',
-	    'https://rpc.hellomoon.io/e786f9ab-21ce-4b16-abb8-8493e239ed5e'
-        //'https://twilight-autumn-diagram.solana-mainnet.quiknode.pro/4fc53d638efd1cc0f80764bc457944bb325d1ff1', //Quicknode
-		//'https://rpc.hellomoon.io/57dbc69d-7e66-4454-b33e-fa6a4b46170f', //Hello Moon
-        //'https://staratl-mainc06-2415.mainnet.rpcpool.com', //Triton
+        'https://twilight-autumn-diagram.solana-mainnet.quiknode.pro/4fc53d638efd1cc0f80764bc457944bb325d1ff1', //Quicknode
+		'https://rpc.hellomoon.io/57dbc69d-7e66-4454-b33e-fa6a4b46170f', //Hello Moon
+        'https://staratl-mainc06-2415.mainnet.rpcpool.com', //Triton
         //'https://mainnet.helius-rpc.com/?api-key=735486d8-ae86-4d26-829c-e34a2210d119', //Helius
 	];
     let readRPCs = customReadRPCs.concat(saRPCs);
